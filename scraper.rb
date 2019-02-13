@@ -3,5 +3,5 @@
 
 require 'wikidata/fetcher'
 
-names = EveryPolitician::Wikidata.morph_wikinames(source: 'tmtmtmtm/north-korea-assembly-wikipedia', column: 'wikiname')
-EveryPolitician::Wikidata.scrape_wikidata(names: { en: names })
+ids = EveryPolitician::Wikidata.morph_wikinames(source: 'tmtmtmtm/north-korea-assembly-wikipedia', column: 'wikidata')
+EveryPolitician::Wikidata.scrape_wikidata(ids: ids)
